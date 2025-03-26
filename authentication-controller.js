@@ -60,7 +60,7 @@ async function login(request, response, next) {
               'Failed to login'
             );
           }
-        return response.status(200).json({ message: 'User updated successfully' });
+        return response.status(200).json({ message: 'logged in successfully' });
     }
     catch (error){
         return next(error);
