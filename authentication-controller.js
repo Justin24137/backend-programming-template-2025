@@ -53,6 +53,7 @@ async function login(request, response, next) {
         const success = await authenticationService.login(
           request.params.id,
           email,
+          password,
         );
         if (!success) {
             throw errorResponder(
